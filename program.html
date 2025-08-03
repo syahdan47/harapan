@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program Harapan Makmur</title>
+
+    <link rel="stylesheet" href="styles/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prosto+One&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Harapan Makmur</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Beranda</a></li>
+                <li><a href="profil.html" class="nav-link">Profil</a></li>
+                <li><a href="program.html" class="nav-link active">Program</a></li>
+                <li><a href="galeri11.html" class="nav-link">Galeri</a></li>
+            </ul>
+            <button class="mobile-menu">☰</button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header program-background">
+        <div class="page-header-content">
+            <h1 class="page-title">Program Desa</h1>
+            <p class="page-subtitle">Berbagai program pembangunan dan pemberdayaan masyarakat</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="main-content">
+        <div class="container">
+            <div class="intro-text">
+                <p>Kampung Harapan Makmur memiliki berbagai program yang bertujuan untuk meningkatkan kesejahteraan masyarakat, mengembangkan potensi desa, dan melestarikan nilai-nilai budaya. Pilih kategori program di bawah ini untuk melihat detail program yang tersedia.</p>
+            </div>
+
+            <div class="program-menu">
+                <!-- Program Pemerintah Desa -->
+                <div class="dropdown-container">
+                    <div class="dropdown-header" onclick="toggleDropdown(this)">
+                        <div class="dropdown-title">
+                            <span><span class="dropdown-icon">🏛️</span>Program Pemerintah Desa</span>
+                            <span class="dropdown-arrow">▼</span>
+                        </div>
+                        <div class="dropdown-description">Program yang diinisiasi dan dikelola oleh pemerintah desa</div>
+                    </div>
+                    <div class="program-content">
+                        <div class="program-list">
+                            <div class="program-item">
+                                <div class="program-name">Program Desa Digital</div>
+                                <div class="program-desc">Mengembangkan sistem informasi desa dan literasi digital masyarakat untuk meningkatkan transparansi dan efektivitas pelayanan publik.</div>
+                                <div class="program-details">
+                                    <div class="program-detail">
+                                        <div class="detail-label">Anggaran</div>
+                                        <div class="detail-value">Rp 150 Juta</div>
+                                    </div>
+                                    <div class="program-detail">
+                                        <div class="detail-label">Target</div>
+                                        <div class="detail-value">500 Warga</div>
+                                    </div>
+                                    <div class="program-detail">
+                                        <div class="detail-label">Status</div>
+                                        <div class="detail-value">Berlangsung</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="program-item">
+                                <div class="program-name">Pembangunan Infrastruktur Jalan</div>
+                                <div class="program-desc">Perbaikan dan pembangunan jalan desa untuk memperlancar akses transportasi dan mendukung aktivitas ekonomi masyarakat.</div>
+                                <div class="program-details">
+                                    <div class="program-detail">
+                                        <div class="detail-label">Anggaran</div>
+                                        <div class="detail-value">Rp 500 Juta</div>
+                                    </div>
+                                    <div class="program-detail">
+                                        <div class="detail-label">Panjang Jalan</div>
+                                        <div class="detail-value">2.5 KM</div>
+                                    </div>
+                                    <div class="program-detail">
+                                        <div class="detail-label">Status</div>
+                                        <div class="detail-value">Tahap II</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="program-item">
+                                <div class="program-name">Sistem Pengelolaan Sampah Terpadu</div>
+                                <div class="program-desc">Membangun fasilitas pengolahan sampah dan meningkatkan kesadaran masyarakat tentang pengelolaan sampah yang ramah lingkungan.</div>
+                                <div class="program-details">
+                                    <div class="program-detail">
+                                        <div class="detail-label">Anggaran</div>
+                                        <div class="detail-value">Rp 200 Juta</div>
+                                    </div>
+                                    <div class="program-detail">
+                                        <div class="detail-label">Kapasitas</div>
+                                        <div class="detail-value">5 Ton/Hari</div>
+                                    </div>
+                                    <div class="program-detail">
+                                        <div class="detail-label">Status</div>
+                                        <div class="detail-value">Perencanaan</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Program Pemberdayaan Masyarakat -->
+                <div class="dropdown-container">
+                    <div class="dropdown-header" onclick="toggleDropdown(this)">
+                        <div class="dropdown-title">
+                            <span><span class="dropdown-icon">💪</span>Pemberdayaan Masyarakat</span>
+                            <span class="dropdown-arrow">▼</span>
+                        </div>
+                        <div class="dropdown-description">Program untuk meningkatkan kapasitas dan kemandirian masyarakat</div>
+                    </div>
+                    <div class="program-content">
+                        <div class="program-list">
+                            <div class="program-item">
+                                <div class="program-name">Pelatihan Kewirausahaan UMKM</div>
+                                <div class="program-desc">Memberikan pelatihan dan pendampingan kepada masyarakat untuk mengembangkan usaha mikro, kecil, dan menengah.</div>
+                                <div class="program-details">
+                                    <div class="program-detail">
+                                        <div class="detail-label">Peserta</div>
+                                        <div class="detail-value">100 Orang</div>
+                                    </div>
+                                    <div class="program-detail">
+                                        <div class="detail-label">Durasi</div>
+                                        <div class="detail-value">6 Bulan</div>
+                                    </div>
+                                    <div class="program-detail">
+                                        <div class="detail-label">Tingkat Keberhasilan</div>
+                                        <div class="detail-value">85%</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="program-item">
+                                <div class="program-name">Program Simpan Pinjam Kelompok</div>
+                                <div class="program-desc">Membentuk kelompok simpan pinjam untuk memberikan akses permodalan kepada masyarakat dengan bunga rendah.</div>
+                                <div class="program-details">
+                                    <div class="program-detail">
+                                        <div class="detail-label">Jumlah Kelompok</div>
+                                        <div class="detail-value">15 Kelompok</div>
+                                    </div>
+                                    <div class="program-detail">
+                                        <div class="detail-label">Total Dana</div>
+                                        <div class="detail-value">Rp 300 Juta</div>
+                                    </div>
+                                    <div class="program-detail">
+                                        <div class="detail-label">Anggota</div>
+                                        <div class="detail-value">300 Orang</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="program-item">
+                                <div class="program-name">Sekolah Lapang Pertanian Organik</div>
+                                <div class="program-desc">Mengajarkan teknik pertanian organik modern untuk meningkatkan produktivitas dan kualitas hasil pertanian.</div>
+                                <div class="program-details">
+                                    <div class="program-detail">
+                                        <div class="detail-label">Petani Peserta</div>
+                                        <div class="detail-value">75 Petani</div>
+                                    </div>
+                                    <div class="program-detail">
+                                        <div class="detail-label">Luas Lahan</div>
+                                        <div class="detail-value">50 Hektar</div>
+                                    </div>
+                                    <div class="program-detail">
+                                        <div class="detail-label">Peningkatan Hasil</div>
+                                        <div class="detail-value">40%</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="program-item">
+                                <div class="program-name">Pemberdayaan Perempuan dan Anak</div>
+                                <div class="program-desc">Program khusus untuk meningkatkan peran perempuan dalam pembangunan desa dan perlindungan hak-hak anak.</div>
+                                <div class="program-details">
+                                    <div class="program-detail">
+                                        <div class="detail-label">Peserta</div>
+                                        <div class="detail-value">150 Perempuan</div>
+                                    </div>
+                                    <div class="program-detail">
+                                        <div class="detail-label">Kegiatan</div>
+                                        <div class="detail-value">12 Program</div>
+                                    </div>
+                                    <div class="program-detail">
+                                        <div class="detail-label">Dampak</div>
+                                        <div class="detail-value">Sangat Positif</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kegiatan Sosial dan Budaya -->
+                <div class="dropdown-container">
+                    <div class="dropdown-header" onclick="toggleDropdown(this)">
+                        <div class="dropdown-title">
+                            <span><span class="dropdown-icon">🎭</span>Kegiatan Sosial & Budaya</span>
+                            <span class="dropdown-arrow">▼</span>
+                        </div>
+                        <div class="dropdown-description">Program pelestarian budaya dan penguatan kohesi sosial</div>
+                    </div>
+                    <div class="program-content">
+                        <div class="program-list">
+                            <div class="program-item">
+                                <div class="program-name">Festival Budaya Tahunan</div>
+                                <div class="program-desc">Penyelenggaraan festival budaya untuk melestarikan tradisi lokal dan mempromosikan potensi wisata desa.</div>
+                                <div class="program-details">
+                                    <div class="program-detail">
+                                        <div class="detail-label">Pengunjung</div>
+                                        <div class="detail-value">5.000 Orang</div>
+                                    </div>
+                                    <div class="program-detail">
+                                        <div class="detail-label">Pertunjukan</div>
+                                        <div class="detail-value">25 Atraksi</div>
+                                    </div>
+                                    <div class="program-detail">
+                                        <div class="detail-label">Frequency</div>
+                                        <div class="detail-value">Tahunan</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="program-item">
+                                <div class="program-name">Posyandu Balita dan Lansia</div>
+                                <div class="program-desc">Pelayanan kesehatan rutin untuk balita dan lansia sebagai upaya meningkatkan derajat kesehatan masyarakat.</div>
+                                <div class="program-details">
+                                    <div class="program-detail">
+                                        <div class="detail-label">Posyandu</div>
+                                        <div class="detail-value">8 Titik</div>
+                                    </div>
+                                    <div class="program-detail">
+                                        <div class="detail-label">Peserta</div>
+                                        <div class="detail-value">400 Orang</div>
+                                    </div>
+                                    <div class="program-detail">
+                                        <div class="detail-label">Frekuensi</div>
+                                        <div class="detail-value">Bulanan</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="program-item">
+                                <div class="program-name">Perpustakaan Desa dan Taman Baca</div>
+                                <div class="program-desc">Mengembangkan minat baca masyarakat melalui perpustakaan desa dan taman baca di berbagai lokasi strategis.</div>
+                                <div class="program-details">
+                                    <div class="program-detail">
+                                        <div class="detail-label">Koleksi Buku</div>
+                                        <div class="detail-value">2.500 Buku</div>
+                                    </div>
+                                    <div class="program-detail">
+                                        <div class="detail-label">Pengunjung/Bulan</div>
+                                        <div class="detail-value">350 Orang</div>
+                                    </div>
+                                    <div class="program-detail">
+                                        <div class="detail-label">Taman Baca</div>
+                                        <div class="detail-value">5 Lokasi</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="program-item">
+                                <div class="program-name">Gotong Royong Pembersihan Lingkungan</div>
+                                <div class="program-desc">Kegiatan rutin pembersihan lingkungan yang melibatkan seluruh masyarakat untuk menjaga kebersihan dan keindahan desa.</div>
+                                <div class="program-details">
+                                    <div class="program-detail">
+                                        <div class="detail-label">Peserta</div>
+                                        <div class="detail-value">800 Warga</div>
+                                    </div>
+                                    <div class="program-detail">
+                                        <div class="detail-label">Frekuensi</div>
+                                        <div class="detail-value">Mingguan</div>
+                                    </div>
+                                    <div class="program-detail">
+                                        <div class="detail-label">Coverage</div>
+                                        <div class="detail-value">100% Wilayah</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="program-item">
+                                <div class="program-name">Pelatihan Kesenian Tradisional</div>
+                                <div class="program-desc">Mengajarkan kesenian tradisional kepada generasi muda untuk melestarikan warisan budaya nenek moyang.</div>
+                                <div class="program-details">
+                                    <div class="program-detail">
+                                        <div class="detail-label">Peserta</div>
+                                        <div class="detail-value">120 Anak</div>
+                                    </div>
+                                    <div class="program-detail">
+                                        <div class="detail-label">Jenis Kesenian</div>
+                                        <div class="detail-value">8 Cabang</div>
+                                    </div>
+                                    <div class="program-detail">
+                                        <div class="detail-label">Instruktur</div>
+                                        <div class="detail-value">15 Orang</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+     <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-upper">
+                <div class="upper-left">
+                    <h3 class="footer-title">Kampung Harapan Makmur</h3>
+                    <p class="footer-text">Kampung Harapan Makmur,<br>Distrik Kurik, Kabupaten Merauke,<br>Papua Selatan</p>
+                </div>
+                <div class="upper-right">
+                    <h3 class="footer-title">Hubungi Kami</h3>
+                    <p>Telp : 08xxxxxxxxx</p>
+                    <p>email : harapanmakmur@gmail.com</p>
+                </div>
+            </div>
+            
+            
+            <!-- <div class="footer-links">
+                <a href="#beranda" class="footer-link">Beranda</a>
+                <a href="#profil" class="footer-link">Profil</a>
+                <a href="#program" class="footer-link">Program</a>
+                <a href="#galeri" class="footer-link">Galeri</a>
+            </div> -->
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Harapan Makmur</p>
+            </div>
+        </div>
+    </footer>
+    
+
+    <script>
+        // Toggle dropdown functionality
+        function toggleDropdown(element) {
+            const content = element.nextElementSibling;
+            const arrow = element.querySelector('.dropdown-arrow');
+            
+            // Close all other dropdowns
+            document.querySelectorAll('.dropdown-header').forEach(header => {
+                if (header !== element) {
+                    header.classList.remove('active');
+                    header.nextElementSibling.classList.remove('active');
+                    header.querySelector('.dropdown-arrow').style.transform = 'rotate(0deg)';
+                }
+            });
+            
+            // Toggle current dropdown
+            element.classList.toggle('active');
+            content.classList.toggle('active');
+            
+            if (element.classList.contains('active')) {
+                arrow.style.transform = 'rotate(180deg)';
+            } else {
+                arrow.style.transform = 'rotate(0deg)';
+            }
+        }
+
+        // Add navbar background on scroll
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 100) {
+                navbar.style.background = 'linear-gradient(135deg, rgba(44, 85, 48, 0.95), rgba(74, 124, 89, 0.95))';
+            } else {
+                navbar.style.background = 'linear-gradient(135deg, #2c5530, #4a7c59)';
+            }
+        });
+
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu').addEventListener('click', function() {
+            const navMenu = document.querySelector('.nav-menu');
+            if (navMenu.style.display === 'flex') {
+                navMenu.style.display = 'none';
+            } else {
+                navMenu.style.display = 'flex';
+                navMenu.style.flexDirection = 'column';
+                navMenu.style.position = 'absolute';
+                navMenu.style.top = '100%';
+                navMenu.style.left = '0';
+                navMenu.style.width = '100%';
+                navMenu.style.background = 'linear-gradient(135deg, #2c5530, #4a7c59)';
+                navMenu.style.padding = '1rem';
+            }
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Add animation on scroll for program items
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe dropdown containers
+        document.querySelectorAll('.dropdown-container').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+
+        // Add staggered animation for dropdown containers
+        document.querySelectorAll('.dropdown-container').forEach((el, index) => {
+            el.style.animationDelay = `${index * 0.2}s`;
+        });
+
+        // Close dropdowns when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!e.target.closest('.dropdown-container')) {
+                document.querySelectorAll('.dropdown-header').forEach(header => {
+                    header.classList.remove('active');
+                    header.nextElementSibling.classList.remove('active');
+                    header.querySelector('.dropdown-arrow').style.transform = 'rotate(0deg)';
+                });
+            }
+        });
+
+        // Keyboard navigation for dropdowns
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                document.querySelectorAll('.dropdown-header').forEach(header => {
+                    header.classList.remove('active');
+                    header.nextElementSibling.classList.remove('active');
+                    header.querySelector('.dropdown-arrow').style.transform = 'rotate(0deg)';
+                });
+            }
+        });
+
+        // Add focus events for accessibility
+        document.querySelectorAll('.dropdown-header').forEach(header => {
+            header.addEventListener('keydown', function(e) {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    toggleDropdown(this);
+                }
+            });
+            
+            // Make dropdown headers focusable
+            header.setAttribute('tabindex', '0');
+        });
+    </script>
+</body>
+</html>

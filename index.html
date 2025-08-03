@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harapan Makmur</title>
+    <link rel="stylesheet" href="styles/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prosto+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Harapan Makmur</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">Beranda</a></li>
+                <li><a href="profil.html" class="nav-link">Profil</a></li>
+                <li><a href="program.html" class="nav-link">Program</a></li>
+                <li><a href="galeri11.html" class="nav-link">Galeri</a></li>
+            </ul>
+            <button class="mobile-menu">☰</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="beranda" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Selamat Datang</h1>
+            <h1 class="hero-title">di Website Resmi Kampung Harapan Makmur</h1>
+            <p class="hero-subtitle">di Website Resmi Kampung Harapan Makmur</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Tentang Kampung</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Kampung Harapan Makmur</h3>
+                    <p>Kampung Harapan Makmur terletak di Distrik Kurik, Kabupaten Merauke, Papua Selatan. Kampung ini dikenal dengan semangat gotong royong warganya dan potensi alam yang melimpah. Dihuni oleh masyarakat yang ramah dan beragam latar budaya, Kampung Harapan Makmur terus berkembang menjadi kampung yang mandiri dan berdaya saing.</p>
+                </div>
+                <div class="about-image">
+                    <img src="asset/hero.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Menu -->
+    <section class="section featured">
+        <div class="container">
+            <h2 class="section-title">Menu Unggulan</h2>
+            <div class="featured-grid">
+                <div class="featured-card" onclick="scrollToSection('profil')">
+                    <div class="card-image card-1">
+                        
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title"><a href="profil.html">Profil</a></h3>
+                        <p class="card-description">Mengenal  lebih dekat sejarah, struktur pemerintahan, dan visi misi kampung Harapan Makmur.</p>
+                    </div>
+                </div>
+                
+                <div class="featured-card" onclick="scrollToSection('program')">
+                    <div class="card-image card-2">
+                        
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title"><a href="program.html">Program</a></h3>
+                        <p class="card-description">Beragam kegiatan dan program pemberdayaan masyarakat untuk membangun kampung yang mandiri.</p>
+                    </div>
+                </div>
+                
+                <div class="featured-card" onclick="scrollToSection('galeri')">
+                    <div class="card-image card-3">
+                        
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title"><a href="galeri11.html">Galeri</a></h3>
+                        <p class="card-description">Dokumentasi kegiatan warga, potensi alam, dan kehidupan sehari-hari di kampung kami.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-upper">
+                <div class="upper-left">
+                    <h3 class="footer-title">Kampung Harapan Makmur</h3>
+                    <p class="footer-text">Kampung Harapan Makmur,<br>Distrik Kurik, Kabupaten Merauke,<br>Papua Selatan</p>
+                </div>
+                <div class="upper-right">
+                    <h3 class="footer-title">Hubungi Kami</h3>
+                    <p>Telp : 08xxxxxxxxx</p>
+                    <p>email : harapanmakmur@gmail.com</p>
+                </div>
+            </div>
+            
+            
+            <!-- <div class="footer-links">
+                <a href="#beranda" class="footer-link">Beranda</a>
+                <a href="#profil" class="footer-link">Profil</a>
+                <a href="#program" class="footer-link">Program</a>
+                <a href="#galeri" class="footer-link">Galeri</a>
+            </div> -->
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Harapan Makmur</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling function
+        function scrollToSection(sectionId) {
+            const element = document.getElementById(sectionId);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        // Add navbar background on scroll
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 100) {
+                navbar.style.background = 'linear-gradient(135deg, rgba(44, 85, 48, 0.95), rgba(74, 124, 89, 0.95))';
+            } else {
+                navbar.style.background = 'linear-gradient(135deg, #2c5530, #4a7c59)';
+            }
+        });
+
+        // Mobile menu toggle (basic implementation)
+        document.querySelector('.mobile-menu').addEventListener('click', function() {
+            const navMenu = document.querySelector('.nav-menu');
+            if (navMenu.style.display === 'flex') {
+                navMenu.style.display = 'none';
+            } else {
+                navMenu.style.display = 'flex';
+                navMenu.style.flexDirection = 'column';
+                navMenu.style.position = 'absolute';
+                navMenu.style.top = '100%';
+                navMenu.style.left = '0';
+                navMenu.style.width = '100%';
+                navMenu.style.background = 'linear-gradient(135deg, #2c5530, #4a7c59)';
+                navMenu.style.padding = '1rem';
+            }
+        });
+
+        // Add click handlers to nav links
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+                if (href.startsWith('#')) { // Hanya untuk anchor dalam halaman yang sama
+                    e.preventDefault();
+                    const targetId = href.substring(1);
+                    scrollToSection(targetId);
+                }
+            });
+        });
+
+    </script>
+</body>
+</html>
