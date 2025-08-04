@@ -47,7 +47,7 @@
                 <div class="dropdown-container">
                     <div class="dropdown-header" onclick="toggleDropdown(this)">
                         <div class="dropdown-title">
-                            <span><span class="dropdown-icon">🏛️</span>Program Pemerintah Desa</span>
+                            <span class="dropdown-icon">Program Pemerintah Desa</span>
                             <span class="dropdown-arrow">▼</span>
                         </div>
                         <div class="dropdown-description">Program yang diinisiasi dan dikelola oleh pemerintah desa</div>
@@ -118,7 +118,7 @@
                 <div class="dropdown-container">
                     <div class="dropdown-header" onclick="toggleDropdown(this)">
                         <div class="dropdown-title">
-                            <span><span class="dropdown-icon">💪</span>Pemberdayaan Masyarakat</span>
+                            <span class="dropdown-icon">Pemberdayaan Masyarakat</span>
                             <span class="dropdown-arrow">▼</span>
                         </div>
                         <div class="dropdown-description">Program untuk meningkatkan kapasitas dan kemandirian masyarakat</div>
@@ -208,7 +208,7 @@
                 <div class="dropdown-container">
                     <div class="dropdown-header" onclick="toggleDropdown(this)">
                         <div class="dropdown-title">
-                            <span><span class="dropdown-icon">🎭</span>Kegiatan Sosial & Budaya</span>
+                            <span class="dropdown-icon">Kegiatan Sosial & Budaya</span>
                             <span class="dropdown-arrow">▼</span>
                         </div>
                         <div class="dropdown-description">Program pelestarian budaya dan penguatan kohesi sosial</div>
@@ -347,30 +347,35 @@
     
 
     <script>
-        // Toggle dropdown functionality
-        function toggleDropdown(element) {
-            const content = element.nextElementSibling;
-            const arrow = element.querySelector('.dropdown-arrow');
-            
-            // Close all other dropdowns
-            document.querySelectorAll('.dropdown-header').forEach(header => {
-                if (header !== element) {
-                    header.classList.remove('active');
-                    header.nextElementSibling.classList.remove('active');
-                    header.querySelector('.dropdown-arrow').style.transform = 'rotate(0deg)';
-                }
-            });
-            
-            // Toggle current dropdown
-            element.classList.toggle('active');
-            content.classList.toggle('active');
-            
-            if (element.classList.contains('active')) {
-                arrow.style.transform = 'rotate(180deg)';
-            } else {
-                arrow.style.transform = 'rotate(0deg)';
-            }
+    // Toggle dropdown functionality
+    function toggleDropdown(element) {
+    const content = element.nextElementSibling;
+    const arrow = element.querySelector('.dropdown-arrow');
+    
+    // Tutup semua dropdown lain
+    document.querySelectorAll('.dropdown-header').forEach(header => {
+        const otherContent = header.nextElementSibling;
+        if (header !== element) {
+            header.classList.remove('active');
+            otherContent.classList.remove('active');
+            otherContent.style.maxHeight = null;
+            header.querySelector('.dropdown-arrow').style.transform = 'rotate(0deg)';
         }
+    });
+
+    // Toggle dropdown yang diklik
+    element.classList.toggle('active');
+        if (element.classList.contains('active')) {
+            content.classList.add('active');
+            content.style.maxHeight = content.scrollHeight + "px"; // Sesuai tinggi konten
+            arrow.style.transform = 'rotate(180deg)';
+        } else {
+            content.classList.remove('active');
+            content.style.maxHeight = null; // Kembali tertutup
+            arrow.style.transform = 'rotate(0deg)';
+        }
+    }
+
 
         // Add navbar background on scroll
         window.addEventListener('scroll', function() {
