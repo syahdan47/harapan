@@ -80,7 +80,7 @@ body {
 /* Hero Section */
 .hero {
     height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.7)),url(/asset/hero.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.7)),url(/asset/hero.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -1244,4 +1244,5 @@ body {
         gap: 1rem;
     }
 }
+
 
