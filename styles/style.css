@@ -16,7 +16,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background: linear-gradient(135deg, #2c5530, #4a7c59);
+    background: #224125;
     backdrop-filter: blur(10px);
     z-index: 1000;
     padding: 1rem 0;
@@ -1286,3 +1286,4 @@ html {
             overflow: hidden;
         }
 }
+
